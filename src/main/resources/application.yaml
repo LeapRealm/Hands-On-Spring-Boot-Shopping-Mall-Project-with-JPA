@@ -28,9 +28,17 @@ spring:
         format_sql: true
 
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
 
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+itemImgLocation: C:/shop/item
+uploadPath: file:///C:/shop/
 
 # Print a bind parameter that is print as a question mark in the query
 logging:

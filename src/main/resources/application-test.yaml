@@ -9,3 +9,5 @@ spring:
   # H2 Database Dialect Setting
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
